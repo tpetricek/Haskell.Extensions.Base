@@ -132,6 +132,8 @@ Library {
         Control.Monad.ST.Strict,
         Control.Monad.Group
         Control.Monad.Zip
+        Control.Monad.Or
+        Control.Monad.Alias
         Data.Bits,
         Data.Bool,
         Data.Char,

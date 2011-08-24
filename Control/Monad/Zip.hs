@@ -51,3 +51,7 @@ instance MonadZip [] where
     mzip     = zip
     mzipWith = zipWith
     munzip   = unzip
+
+instance MonadZip Maybe where
+    mzip (Just a) (Just b) = Just (a, b)
+    mzip _ _ = Nothing
